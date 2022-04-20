@@ -75,7 +75,7 @@ function TasksList() {
                 <p>{task.description}</p>
               </div>
             </div>
-            <div>
+            <div className="buttoms">
               <Button
                 title={"Edit"}
                 type="buttom"
@@ -96,8 +96,8 @@ function TasksList() {
 }
 
 const Title = styled.h3`
-  font-size: 0.8rem;
-  color: var(--black);
+  font-size: 0.9rem;
+  color: var(--bg-2);
   text-decoration: ${(props) => (props.completed ? "line-through" : "none")};
   transition: 2s;
   text-align: start;
@@ -126,7 +126,10 @@ const TasksListStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    div {
+    .buttoms {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       button:nth-child(2) {
         background-color: var(--red);
         margin-left: 15px;
@@ -148,6 +151,29 @@ const TasksListStyled = styled.div`
       font-size: 0.8rem;
       color: var(--black);
       text-align: start;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    margin: 10px;
+    section {
+      padding: 10px;
+
+      div:nth-child(1) {
+        div {
+          input {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    .buttoms {
+      flex-direction: column;
+      button {
+        margin-top: 10px;
+        font-size: 0.9rem;
+      }
     }
   }
 `;

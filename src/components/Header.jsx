@@ -15,6 +15,9 @@ function Header() {
 const HeaderStyled = styled.section`
   width: 100%;
   text-align: center;
+  @media only screen and (max-width: 650px) {
+    padding: 10px;
+  }
 `;
 
 export default Header;
