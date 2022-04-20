@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: 1.1rem;
     }
     body{
-        background-color: #ccd6f6;
+        background-color: #f6f6f6;
     }
     a{
         font-family: inherit;
