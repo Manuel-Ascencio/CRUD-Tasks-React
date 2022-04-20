@@ -21,6 +21,9 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Open Sans', sans-serif;
         font-size: 1.1rem;
     }
+    body{
+        background-color: #ccd6f6;
+    }
     a{
         font-family: inherit;
         color: var(--cyan-blue);
